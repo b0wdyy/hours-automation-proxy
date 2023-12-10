@@ -1,5 +1,8 @@
 from flask import Flask, request, jsonify
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 TARGET_URL = "https://focus.teamleader.eu/backend/client-api/save_timetracking.php"
